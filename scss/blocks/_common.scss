@@ -1,0 +1,84 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+*:focus {
+  outline-offset: 3px;
+  outline: 2px dashed var(--accent-color);
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: $desktop;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// Visually-hidden styles
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// Button styles
+.button {
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--primary-bg-color);
+  font-size: 13px;
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    font-size: 12px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 7px 14px;
+    white-space: nowrap;
+  }
+}
+
+// Line styles
+.line {
+  display: inline-block;
+  background-color: var(--accent-color);
+  width: 80px;
+  height: 3px;
+}

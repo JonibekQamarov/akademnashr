@@ -1,0 +1,16 @@
+/* COLORS */
+:root {
+  --accent-color: #ff7500;
+  --title-color: #000;
+  --primary-bg-color: #fff;
+  --footer-bg: #f8f8f8;
+  --secondary-bg-color: #252420;
+  --primary-font-family: "Roboto", "Arial", sans-serif;
+  --secondary-font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+// Breakpoints
+$desktop: 1100px;
+$tablet-l: 992px;
+$tablet: 768px;
+$mobile: 576px;
